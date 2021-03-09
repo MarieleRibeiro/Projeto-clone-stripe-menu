@@ -1,6 +1,6 @@
-import GlobalStyles from './styles/GlobalStyles';
-import Layout from './components/Layout'
-import Navbar from './components/Navbar'
+import GlobalStyles from "./styles/GlobalStyles";
+import Layout from "./components/Layout";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -10,7 +10,6 @@ function App() {
       </Layout>
       <GlobalStyles />
     </>
-
   );
 }
 
