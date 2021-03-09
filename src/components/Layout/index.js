@@ -6,10 +6,14 @@ const Layout = styled.div`
 
 export const Wrapper = styled.div`
 <<<<<<< HEAD
+<<<<<<< HEAD
   max-width: 1280px;
 =======
   max-widht: 1280px;
 >>>>>>> first commit
+=======
+  max-width: 1280px;
+>>>>>>> dropdown-option
   margin: 0 auto;
 `
 
