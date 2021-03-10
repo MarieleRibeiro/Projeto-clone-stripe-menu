@@ -22,7 +22,7 @@ export function DropdownOption({ name, content: Content, backgroundHeight }) {
 
   useEffect(() => {
     if (!registered && optionDimensions) {
-      const WrapperContent = () => {
+      const WrappedContent = () => {
         const contentRef = useRef();
 
         useEffect(() => {
@@ -40,8 +40,8 @@ export function DropdownOption({ name, content: Content, backgroundHeight }) {
       registerOption({
         id,
         optionDimensions,
-        optionCenterX: optionDimensions.x + optionDimensions.widht / 2,
-        WrapperContent,
+        optionCenterX: optionDimensions.x + optionDimensions.width / 2,
+        WrappedContent,
         backgroundHeight,
       });
 
@@ -49,7 +49,7 @@ export function DropdownOption({ name, content: Content, backgroundHeight }) {
     } else if (registered && optionDimensions) {
       updateOptionProps(id, {
         optionDimensions,
-        optionCenterX: optionDimensions.x + optionDimensions.widht / 2,
+        optionCenterX: optionDimensions.x + optionDimensions.width / 2,
       });
     }
   }, [
