@@ -69,16 +69,16 @@ export function DropdownOption({ name, content: Content, backgroundHeight }) {
   ]);
 
   //ABRIR E FECHAR A MODAL
-  const handleOpen = () => setTargetId(id);
-  const handleClose = () => setTargetId(null);
+  const handleOpen = () => setTargetId(id); // o alvo e o id que o mouse fica
+  const handleClose = () => setTargetId(null); // nao quero mais nada no estado
   const handleTouch = () => (window.isMobile = true); //QUANDO ESTIVER NO CELULAR
 
   // CHAMANDO UM EVENTO SE O ID FOR O MESMO QUE ESTOU COM O MOUSE ELE IRA APARECER SE NAO FECHAR
   const handleClick = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // prevenir um comportamento pradrao do navegador
 
     return targetId === id ? handleClose() : handleOpen();
-  };
+  }; //verificar se o item alvo ja esta ativo fechar caso contrario vou abrir
 
   return (
     <motion.button

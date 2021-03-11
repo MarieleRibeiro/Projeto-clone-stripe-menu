@@ -1,4 +1,4 @@
-import React, { useContext, useMemo, useState, useEffect } from "react";
+import { useContext, useMemo, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 import { Context } from "./Provider";
