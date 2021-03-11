@@ -45,7 +45,7 @@ export function DropdownRoot() {
     let timeout = setTimeout(
       () => setHasInteracted(false),
       refDuration * 1000 * 0.9
-    );
+    ); // reseta as interacoes
 
     return () => clearTimeout(timeout);
   }, [isActive]);
