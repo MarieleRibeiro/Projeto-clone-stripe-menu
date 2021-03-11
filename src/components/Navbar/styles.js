@@ -43,7 +43,7 @@ export const DropdownStyles = styled.div`
       background: #fff;
 
       top: -6.5px;
-      left: -8px;
+      //  left: -8px;
       border-radius: 4px 0 0 0;
 
       transform: rotate(45deg);
